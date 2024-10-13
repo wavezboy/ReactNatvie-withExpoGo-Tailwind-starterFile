@@ -56,13 +56,13 @@ export default function InputField({
             className={`flex flex-row justify-start items-center  relative bg-transparent rounded-[16px] border border-[#767676]  ${containerStyle}`}
           >
             <TextInput
-              className={`rounded-full p-4 font-normal font-LatoRegular text-white py-[10px]   text-[14px] flex-1 ${inputStyle} text-left`}
+              className={`rounded-full p-4 font-normal font-PoppinsRegular text-white py-[10px]   text-[16px] flex-1 ${inputStyle} text-left`}
               secureTextEntry={secureText}
               keyboardType={keyboardType}
               {...props}
               placeholder={placeholder}
               onChangeText={onChangeText}
-              placeholderTextColor={"#AEAEAE"}
+              placeholderTextColor={"#767676"}
             ></TextInput>
             {icon && (
               <TouchableOpacity

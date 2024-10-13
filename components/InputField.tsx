@@ -26,6 +26,7 @@ interface inputProps {
   iconStyle?: string;
   className?: string;
   keyboardType?: KeyboardType;
+  icon2?: React.ReactNode;
 }
 
 export default function InputField({
@@ -41,6 +42,7 @@ export default function InputField({
   iconStyle,
   inputStyle,
   keyboardType,
+  icon2,
   ...props
 }: inputProps) {
   const [secureText, setSecureText] = useState(secureTextEntry);
@@ -55,8 +57,16 @@ export default function InputField({
           <View
             className={`flex flex-row justify-start items-center  relative bg-transparent rounded-[16px] border border-[#767676]  ${containerStyle}`}
           >
+            {icon2 && (
+              <TouchableOpacity
+                onPress={() => setSecureText((prev) => !prev)}
+                className="mr-[0px] ml-[10px]"
+              >
+                {icon2}
+              </TouchableOpacity>
+            )}
             <TextInput
-              className={`rounded-full p-4 font-normal font-PoppinsRegular text-white py-[10px]   text-[16px] flex-1 ${inputStyle} text-left`}
+              className={`rounded-full p-4 font-normal  font-PoppinsRegular text-white py-[10px]   text-[16px] flex-1 ${inputStyle} text-left`}
               secureTextEntry={secureText}
               keyboardType={keyboardType}
               {...props}

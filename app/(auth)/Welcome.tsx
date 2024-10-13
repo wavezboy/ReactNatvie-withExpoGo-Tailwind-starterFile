@@ -22,7 +22,7 @@ export default function Onboarding() {
   const swiperRef = useRef<Swiper>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <SafeAreaView className="h-full  flex-1  bg-[#111112]  ">
+    <SafeAreaView className="h-full   flex-1  bg-[#111112]  ">
       <View className=" pt-[63px] items-center justify-center">
         <LogoIcon />
         <Text className="text-white text-[16px] font-PoppinsRegular mt-[15px]">
@@ -50,14 +50,17 @@ export default function Onboarding() {
             </View>
           </TouchableWithoutFeedback>
 
-          <InputField containerStyle="min-w-[243px] ml-[27px] bg-[#111112]  h-[54px]" />
+          <InputField
+            containerStyle="min-w-[243px] ml-[27px] bg-[#111112]  h-[54px]"
+            placeholder="07031141156"
+          />
         </View>
         <CustomButton
           title="Continue"
           onpress={() => router.push("/(auth)/Welcome2")}
         />
 
-        <Link href={"/"} className="text-white text-center mt-[54px]">
+        <Link href={"/"} className="text-white text-center mt-[50px]">
           Sign in as guest
         </Link>
       </View>

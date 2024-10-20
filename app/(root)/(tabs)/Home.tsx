@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 
 export default function Page() {
   return (
-    <View>
+    <View className="">
       <Link href="/Sign-in">
         <Text>Sign In</Text>
       </Link>

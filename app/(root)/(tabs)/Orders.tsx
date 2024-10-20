@@ -1,10 +1,10 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-export default function Chat() {
+export default function Orders() {
   return (
     <View>
-      <Text>Chat</Text>
+      <Text>Orders</Text>
     </View>
   );
 }

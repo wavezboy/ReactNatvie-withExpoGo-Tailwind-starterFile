@@ -94,7 +94,7 @@ export default function Welcome3() {
         <CustomButton
           title="Next"
           Classname="mt-[20px]"
-          onpress={() => router.push("/(auth)/Welcome4")}
+          onpress={() => router.push("/(auth)/Create-password")}
         />
       </View>
     </ScrollView>

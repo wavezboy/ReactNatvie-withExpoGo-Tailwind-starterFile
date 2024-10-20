@@ -1,5 +1,5 @@
 import { View, Text, SafeAreaView } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import {
   CancelIcon,
   SearchIcon,
@@ -18,6 +18,7 @@ import MapView from "react-native-maps";
 import { TouchableOpacity } from "react-native";
 
 export default function Locations() {
+  const [selectedLocaton, setSelectedLocation] = useState(0);
   return (
     <SafeAreaView className="h-full py-[36px] justify-between px-[23px] flex-1 bg-white">
       <View>
@@ -88,10 +89,10 @@ export default function Locations() {
           </View>
         </View>
 
-        <View className="w-full p-[17px] rounded-[16px] mt-[16px]  h-[164px] bg-[#FCF2D4]">
+        <View className="w-full p-[17px] rounded-[16px] mt-[16px]  h-[164px] border border-[#C1C1C1]">
           <View className="flex-row justify-between items-center">
-            <View className="w-[48px] h-[24px] items-center justify-center    bg-white rounded-[8px]">
-              <Text className="text-[#767676] font-PoppinsRegular ">Home</Text>
+            <View className="w-[48px] h-[24px] items-center justify-center    bg-[#E9E9E9] rounded-[8px]">
+              <Text className="text-[#767676] font-PoppinsRegular ">Work</Text>
             </View>
 
             <View className="h-[34px] w-[34px] bg-[#29C302] items-center justify-center rounded-[10px]">
@@ -136,7 +137,7 @@ export default function Locations() {
           </View>
         </View>
 
-        <View className="w-full p-[17px] rounded-[16px] mt-[16px]  h-[164px] bg-[#FCF2D4]">
+        <View className="w-full p-[17px] rounded-[16px] mt-[16px]  h-[164px] border border-[#C1C1C1]">
           <View className="flex-row justify-between items-center">
             <View className="w-[48px] h-[24px] items-center justify-center    bg-white rounded-[8px]">
               <Text className="text-[#767676] font-PoppinsRegular ">Home</Text>
@@ -184,7 +185,10 @@ export default function Locations() {
           </View>
         </View>
       </View>
-      <CustomButton title="Save address" />
+      <CustomButton
+        onpress={() => router.push("/(auth)/Sign-in")}
+        title="Save address"
+      />
     </SafeAreaView>
   );
 }

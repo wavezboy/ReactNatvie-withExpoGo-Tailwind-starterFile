@@ -57,7 +57,7 @@ export default function Onboarding() {
         </View>
         <CustomButton
           title="Continue"
-          onpress={() => router.push("/(auth)/Welcome2")}
+          onpress={() => router.push("/(auth)/Verify-phoneNumber")}
         />
 
         <Link href={"/"} className="text-white text-center mt-[50px]">

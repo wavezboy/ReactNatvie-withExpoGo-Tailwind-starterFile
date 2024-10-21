@@ -12,7 +12,7 @@ import { Text, View } from "react-native";
 
 export default function Layout() {
   return (
-    <View className="flex-1 px-[15px]">
+    <View className="flex-1 px-[15px] bg-white">
       <Tabs
         screenOptions={{
           tabBarHideOnKeyboard: true,
@@ -28,7 +28,7 @@ export default function Layout() {
             borderBottomEndRadius: 24,
             borderBottomStartRadius: 24,
             height: 118,
-            marginBottom: 18,
+            marginBottom: 10,
             paddingHorizontal: 19,
             paddingBottom: 27,
           },

@@ -79,7 +79,7 @@ export default function Layout() {
         <Tabs.Screen
           name="Orders"
           options={{
-            title: "Search for Events",
+            title: "Orders",
             headerShown: true,
             tabBarIcon: ({ color, focused }) => <OrderIcon focused={focused} />,
 

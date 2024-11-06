@@ -54,7 +54,7 @@ export default function Search() {
         Recent searches
       </Text>
 
-      <View className="flex-row gap-[20px] mt-[16px]">
+      <View className="flex-row gap-[20px]">
         <View className="min-w-[82px] px-[10px] h-[44px] bg-[#FCF2D4] flex-row items-center justify-center rounded-[16px] border border-[#767676]">
           <View>
             <RecentIcon />
@@ -80,7 +80,7 @@ export default function Search() {
           </Text>
         </View>
       </View>
-      <View className="flex-row gap-[20px] mt-[14px]">
+      <View className="flex-row gap-[20px]">
         <View className="min-w-[82px] px-[10px] h-[44px] bg-[#FCF2D4] flex-row items-center justify-center rounded-[16px] border border-[#767676]">
           <View>
             <RecentIcon />

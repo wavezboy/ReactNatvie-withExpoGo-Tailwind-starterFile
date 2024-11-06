@@ -1,3 +1,4 @@
+import { CartIcon } from "@/assets/icons/SearchIcons";
 import {
   OrderIcon,
   ProfileIcon,
@@ -8,6 +9,7 @@ import {
 import { icons } from "@/constants";
 import { Stack, Tabs } from "expo-router";
 import React from "react";
+import { TouchableOpacity } from "react-native";
 import { Text, View } from "react-native";
 
 export default function Layout() {
@@ -53,7 +55,7 @@ export default function Layout() {
         <Tabs.Screen
           name="Search"
           options={{
-            title: "Search for Vendors",
+            title: "Search",
             headerShown: true,
             tabBarIcon: ({ color, focused }) => (
               <SearchIcon focused={focused} />
@@ -64,6 +66,13 @@ export default function Layout() {
               >
                 Search
               </Text>
+            ),
+            headerRight: () => (
+              <TouchableOpacity>
+                <View>
+                  <CartIcon />
+                </View>
+              </TouchableOpacity>
             ),
           }}
         />

@@ -124,9 +124,15 @@ export default function Page() {
           height={960}
         />
       </View>
-      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      <ScrollView
+        horizontal={true}
+        className=""
+        showsHorizontalScrollIndicator={false}
+      >
         {[...Array(5)].map((data, i) => (
-          <FoodComponent key={i} />
+          <View key={i} className="mr-3 ">
+            <FoodComponent />
+          </View>
         ))}
       </ScrollView>
     </ScrollView>

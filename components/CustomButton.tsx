@@ -24,7 +24,9 @@ interface btnProps {
 const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
   switch (variant) {
     case "secondary":
-      return "bg-gray-500";
+      return "bg-white";
+    case "white":
+      return "bg-white";
     case "danger":
       return "bg-red-500";
     case "success":
@@ -43,9 +45,11 @@ const getTextVariant = (variant: ButtonProps["textVariant"]) => {
     case "secondary":
       return "text-[#606060]";
     case "danger":
-      return "text-red-100";
+      return "text-red-80";
     case "success":
       return "text-green-100";
+    case "white":
+      return "text-[#767676]";
 
     default:
       return "text-white";

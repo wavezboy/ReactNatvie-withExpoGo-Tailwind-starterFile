@@ -96,7 +96,7 @@ export default function Layout() {
           name="Support"
           options={{
             title: "Support",
-            headerShown: true,
+            headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <SupportIcon focused={focused} />
             ),

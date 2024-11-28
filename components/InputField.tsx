@@ -14,6 +14,7 @@ import {
 import React, { useState } from "react";
 
 interface inputProps {
+  placeholderTextColor?: string;
   label?: string;
   labelStyle?: string;
   placeholder?: string;
@@ -30,6 +31,7 @@ interface inputProps {
 }
 
 export default function InputField({
+  placeholderTextColor = "#767676",
   labelStyle,
   label,
   icon,
@@ -72,7 +74,7 @@ export default function InputField({
               {...props}
               placeholder={placeholder}
               onChangeText={onChangeText}
-              placeholderTextColor={"#767676"}
+              placeholderTextColor={placeholderTextColor}
             ></TextInput>
             {icon && (
               <TouchableOpacity

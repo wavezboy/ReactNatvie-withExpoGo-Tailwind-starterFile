@@ -117,7 +117,7 @@ export default function Layout() {
           name="Profile"
           options={{
             title: "Profile",
-            headerShown: true,
+            headerShown: false,
             headerShadowVisible: false,
             tabBarIcon: ({ color, focused }) => (
               <ProfileIcon focused={focused} />

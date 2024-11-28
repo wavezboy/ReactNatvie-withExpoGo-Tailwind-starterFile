@@ -32,7 +32,7 @@ export default function Layout() {
             height: 118,
             marginBottom: 10,
             paddingHorizontal: 19,
-            paddingBottom: 27,
+            paddingTop: 27,
           },
           tabBarLabelStyle: {},
         }}
@@ -45,7 +45,7 @@ export default function Layout() {
             tabBarIcon: ({ color, focused }) => <HomeIcon focused={focused} />,
             tabBarLabel: ({ focused }) => (
               <Text
-                className={`${focused ? "text-[#FFBF00]  font-normal " : "text-white"} mt-[-30px] font-InterMedium mb-[10px]  `}
+                className={`${focused ? "text-[#FFBF00]  font-normal " : "text-white"} font-InterMedium mb-[10px]  `}
               >
                 Home
               </Text>
@@ -62,7 +62,7 @@ export default function Layout() {
             ),
             tabBarLabel: ({ focused }) => (
               <Text
-                className={`${focused ? "text-[#FFBF00]   font-normal " : "text-white"} font-InterMedium mt-[-30px] mb-[10px]  `}
+                className={`${focused ? "text-[#FFBF00]   font-normal " : "text-white"} font-InterMedium  mb-[10px]  `}
               >
                 Search
               </Text>
@@ -85,7 +85,7 @@ export default function Layout() {
 
             tabBarLabel: ({ focused }) => (
               <Text
-                className={`${focused ? "text-[#FFBF00]   font-normal " : "text-white"} font-InterMedium mt-[-30px] mb-[10px]  `}
+                className={`${focused ? "text-[#FFBF00]   font-normal " : "text-white"} font-InterMedium  mb-[10px]  `}
               >
                 Orders
               </Text>
@@ -103,7 +103,7 @@ export default function Layout() {
 
             tabBarLabel: ({ focused }) => (
               <Text
-                className={`${focused ? "text-[#FFBF00]   font-normal " : "text-white"} font-InterMedium mt-[-30px] mb-[10px]  `}
+                className={`${focused ? "text-[#FFBF00]   font-normal " : "text-white"} font-InterMedium mb-[10px]  `}
               >
                 Support
               </Text>
@@ -120,7 +120,7 @@ export default function Layout() {
             ),
             tabBarLabel: ({ focused }) => (
               <Text
-                className={`${focused ? "text-[#FFBF00]   font-normal " : "text-white"} font-InterMedium mt-[-30px] mb-[10px]  `}
+                className={`${focused ? "text-[#FFBF00]   font-normal " : "text-white"} font-InterMedium mb-[10px]  `}
               >
                 Profile
               </Text>

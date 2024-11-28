@@ -26,7 +26,10 @@ import { SafeAreaView, Text, View, Image } from "react-native";
 
 export default function Page() {
   return (
-    <ScrollView className="h-full py-[36px] flex-1 bg-white">
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      className="h-full py-[10px]  flex-1 bg-white"
+    >
       <View className="flex-row items-center justify-between">
         <TouchableOpacity className="flex-row items-center ">
           <View>

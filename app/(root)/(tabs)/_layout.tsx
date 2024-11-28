@@ -57,6 +57,7 @@ export default function Layout() {
           options={{
             title: "Search",
             headerShown: true,
+            headerShadowVisible: false,
             tabBarIcon: ({ color, focused }) => (
               <SearchIcon focused={focused} />
             ),
@@ -81,6 +82,7 @@ export default function Layout() {
           options={{
             title: "Orders",
             headerShown: true,
+            headerShadowVisible: false,
             tabBarIcon: ({ color, focused }) => <OrderIcon focused={focused} />,
 
             tabBarLabel: ({ focused }) => (
@@ -97,6 +99,7 @@ export default function Layout() {
           options={{
             title: "Support",
             headerShown: false,
+            headerShadowVisible: false,
             tabBarIcon: ({ color, focused }) => (
               <SupportIcon focused={focused} />
             ),
@@ -115,6 +118,7 @@ export default function Layout() {
           options={{
             title: "Profile",
             headerShown: true,
+            headerShadowVisible: false,
             tabBarIcon: ({ color, focused }) => (
               <ProfileIcon focused={focused} />
             ),

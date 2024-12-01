@@ -110,6 +110,9 @@ export default function Profile() {
             </TouchableOpacity>
 
             <TouchableOpacity className="w-[94px] items-center justify-center h-[120px] rounded-[16px] bg-[#F7F7F7]">
+              <View className="W-[24px] absolute top-0 h-[24px] rounded-full bg-[#FFBF00]">
+                <Text className="text-[12px] font-PoppinsRegular">3</Text>
+              </View>
               <View>
                 <AddressIcon />
               </View>

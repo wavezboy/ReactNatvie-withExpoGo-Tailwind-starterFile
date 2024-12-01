@@ -14,7 +14,7 @@ import InputField from "@/components/InputField";
 
 export default function Support() {
   return (
-    <SafeAreaView className="h-full  py-[36px] flex-1 bg-white">
+    <SafeAreaView className="h-full px-[15px]  py-[36px] flex-1 bg-white">
       <View className="flex-row justify-between items-center">
         <LogoIcon />
 

@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}
-      className="h-full py-[10px]  flex-1 bg-white"
+      className="h-full p-[15px]  flex-1 bg-white"
     >
       <View className="flex-row items-center justify-between">
         <TouchableOpacity className="flex-row items-center ">

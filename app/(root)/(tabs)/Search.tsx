@@ -7,7 +7,7 @@ import { RecentIcon } from "@/assets/icons/SearchIcons";
 export default function Search() {
   return (
     <ScrollView
-      className="h-full  flex-1 bg-white"
+      className="h-full px-[15px]  flex-1 bg-white"
       showsVerticalScrollIndicator={false}
     >
       <InputField

@@ -52,7 +52,7 @@ export default function Orders() {
   );
 
   return (
-    <SafeAreaView className="h-full py-[36px] items-center   bg-white">
+    <SafeAreaView className="h-full py-[36px] px-[15px] items-center   bg-white">
       <View className="w-full h-[60px] flex-row justify-between bg-[#F0F0F0] rounded-[16px] items-center px-[5px]">
         <TouchableOpacity
           className={` ${myCart ? "bg-black" : ""} w-[107px] h-[47px]  items-center justify-center rounded-[12px]`}

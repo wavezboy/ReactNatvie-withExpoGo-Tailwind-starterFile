@@ -4,7 +4,7 @@ import vector from "@/assets/images/Vector.png";
 import FoodImage2 from "@/assets/images/food2.png";
 import OrderCardPlaceholder from "@/assets/images/OrderCardPlaceholder.png";
 import Avatar from "@/assets/images/Avatar.png";
-import Emoticon from "@/assets/images/emoticon.svg";
+import Head from "@/assets/images/Head.png";
 
 export const icons = {
   welcomeIcon,
@@ -16,5 +16,5 @@ export const images = {
   FoodImage2,
   OrderCardPlaceholder,
   Avatar,
-  Emoticon,
+  Head,
 };
